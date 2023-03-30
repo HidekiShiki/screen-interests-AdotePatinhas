@@ -1,0 +1,29 @@
+.card-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    justify-items: center;
+  }
+  
+  @media screen and (max-widht: 800px) {
+    .card-list{
+      flex-direction: row;  
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    } 
+}
+
+@media screen and (max-widht: 400px) {
+    .card-list{
+        flex-direction: row;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      } 
+}
